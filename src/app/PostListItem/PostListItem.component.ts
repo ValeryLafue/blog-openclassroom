@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-mesposts',
-  templateUrl: './mesposts.component.html',
-  styleUrls: ['./mesposts.component.scss']
+  selector: 'app-PostListItem',
+  templateUrl: './PostListItem.component.html',
+  styleUrls: ['./PostListItem.component.scss']
 })
-export class MespostsComponent implements OnInit {
+export class PostListItemComponent implements OnInit {
 
   @Input() title: string;
   @Input() content: string;
@@ -26,5 +26,13 @@ export class MespostsComponent implements OnInit {
     this.loveIts++;
     console.log('love ' + this.loveIts);
   }
+
+  getColor() {
+    if(this.loveIts>0) {
+      return 'green';
+    } else if(this.loveIts<0) {
+      return 'red';
+    }
+}
 
 }

@@ -3,14 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PostListComponent } from './post-list/post-list.component';
-import { MespostsComponent } from './mesposts/mesposts.component';
+import { PostListComponent } from './postlist/postlist.component';
+import { PostListItemComponent } from './PostListItem/PostListItem.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostListComponent,
-    MespostsComponent
+    PostListItemComponent
   ],
   imports: [
     BrowserModule,
