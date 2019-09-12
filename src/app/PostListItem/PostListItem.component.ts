@@ -27,12 +27,6 @@ export class PostListItemComponent implements OnInit {
     console.log('love ' + this.loveIts);
   }
 
-  getColor() {
-    if(this.loveIts>0) {
-      return 'green';
-    } else if(this.loveIts<0) {
-      return 'red';
-    }
-}
+
 
 }
