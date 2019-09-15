@@ -47,15 +47,11 @@ removePost(index: number) {
 
 loveIt(index: number) {
   this.posts[index].loveIts++;
-  console.log(this.posts[index].title);
-  console.log(`loveNumber: ${ this.posts[index].loveIts }`);
   this.emitPosts();
 }
 
 dontLoveIt(index: number) {
   this.posts[index].loveIts--;
-  console.log(this.posts[index].title);
-  console.log(`loveNumber: ${ this.posts[index].loveIts }`);
   this.emitPosts();
 }
 
