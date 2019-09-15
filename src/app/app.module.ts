@@ -11,13 +11,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { PostsService } from './service/posts.service';
 
-
 const appRoutes: Routes = [
   { path: 'posts', component: PostListComponent },
   { path: 'new', component: NewPostComponent },
   { path: '#', redirectTo: 'posts' },
   { path: '**', redirectTo: 'posts' }
 ];
+
 @NgModule({
   declarations: [
     AppComponent,

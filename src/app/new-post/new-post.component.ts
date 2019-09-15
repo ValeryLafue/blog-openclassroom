@@ -16,7 +16,7 @@ export class NewPostComponent implements OnInit, OnDestroy {
   postForm: FormGroup;
   post: Post;
   
-  createdAt: Date;
+  created_at: Date;
   index: number;
   loveIts: number;
 
@@ -51,7 +51,7 @@ export class NewPostComponent implements OnInit, OnDestroy {
     onSavePost() {
         const title = this.postForm.get('title').value;
         const content = this.postForm.get('content').value;
-        this.createdAt = new Date();
+        this.created_at = new Date();
         this.loveIts = 0;
         const index = this.posts.length;
 
@@ -59,7 +59,7 @@ export class NewPostComponent implements OnInit, OnDestroy {
           index,
           title, 
           content,
-          this.createdAt,
+          this.created_at,
           this.loveIts
           );
         this.postService.createNewPost(newPost);

@@ -4,7 +4,7 @@ export class Post {
         public index: number,
         public title: string, 
         public content: string,
-        public createdAt: Date, 
+        public created_at: Date, 
         public loveIts: number
         ) {}
 

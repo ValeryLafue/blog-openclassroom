@@ -9,6 +9,7 @@ import { Post } from '../model/post.model';
 })
 export class PostListItemComponent implements OnInit {
 
+  
   @Input() title: string;
   @Input() content: string;
   @Input() loveIts: number;
